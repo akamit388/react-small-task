@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import LifeCycleUseEffect from './components/LifeCycleUseEffect';
+import InputTask from './components/InputTask';
+// import LifeCycleUseEffect from './components/LifeCycleUseEffect';
 // import TopDiv from './components/getColor/TopDiv';
 // import Task1 from './components/Task1';
 // import Task2 from './components/Task2';
@@ -31,7 +32,8 @@ const App = () => {
       {/* <CheckboxDeleteTwo/> */}
       {/* <ComOne/> */}
       {/* <TopDiv/> */}
-      <LifeCycleUseEffect/>
+      {/* <LifeCycleUseEffect/> */}
+      <InputTask/>
     </>
   )
 }
