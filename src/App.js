@@ -13,6 +13,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import CheckboxDeleteTwo from './components/CheckboxDeleteTwo';
 // import ComOne from './components/hooks/usecontest/ComOne';
 // import LifeCycleUseEffect from './components/LifeCycleUseEffect';
+//import InputTask from './components/InputTask';
 import SythenticEvent from './components/SythenticEvent';
 
 
@@ -33,6 +34,7 @@ const App = () => {
       {/* <ComOne/> */}
       {/* <TopDiv/> */}
       {/* <LifeCycleUseEffect/> */}
+      {/* <InputTask/> */}
       <SythenticEvent/>
     </>
   )
