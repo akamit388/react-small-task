@@ -3,11 +3,28 @@ import React, { useState } from 'react'
 const InputTask = () => {
     const [inputData, setInputData] = useState('')
     const [items, setItems] = useState([])
+
+
+    // let result = [...items, inputData]
+    // for(let i = 1; i <= 10; i++){
+    //     let result2 =  i * result
+    //     console.log(result2)
+    // }
+    //setItems([result2])
     
     const submithandler = (e) => {
-        e.preventDefault()
-        setItems([...items, inputData])
-        setInputData('')
+        e.preventDefault();
+        setItems([]);
+       
+        for(let i = 1; i <= 10; i++){
+            let table =  i * inputData;
+
+            setItems(prev=>{
+                let tableArr = [...prev, table];
+                return tableArr;
+            });
+        }
+        setInputData("");
     }
 
     return (
@@ -18,8 +35,14 @@ const InputTask = () => {
             </form>
 
             {
-                items.map((ele, index)=>(
-                    <div key={index}><h1>{ele}</h1></div>
+                // items.filter((item, index)=>{
+                //     for(let i = 0; i <= 10; i++){
+                //         return i * item
+                //     }
+                // })
+
+                items.map((item, index)=>(
+                    <div key={index}><h5>{item}</h5></div>
                 ))
             }
         </>

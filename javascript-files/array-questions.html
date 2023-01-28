@@ -9,10 +9,14 @@
 <body>
 
     <script>
-        //**** Task-1: Array Shuffling
+        //**** Task-1: Convert String to Array and Shuffling
         // let arr = 'ramkishan';
-        // let arr2 = arr.split('') 0.5 - Math.random();
+        // let arr2 = arr.split('').sort(() => Math.random() - 0.5) ;
         // console.log(arr2);
+
+        // const someArray = [1, 2, 3, 4, 5];
+        // const someArray2 =  someArray.sort(() => Math.random() - 0.5);
+        // console.log(someArray2);
 
         //**** Task-2: console printing
         // console.log('amit');
@@ -23,13 +27,13 @@
         // function sandeep(){ return (console.log('sandeep'))}
 
         //**** Task-3: Two Array concat
-        let obj = {};
-        let arr = [1, 2, 3, 4];
-        let arr2 = ['Rohan', 'Ashish', 'Manoj', 'Ram'];
-        arr.forEach((value, index)=>{
-            obj[value] = arr2[index];
-        })
-        console.log(obj)
+        // let obj = {};
+        // let arr = [1, 2, 3, 4];
+        // let arr2 = ['Rohan', 'Ashish', 'Manoj', 'Ram'];
+        // arr.forEach((value, index)=>{
+        //     obj[value] = arr2[index];
+        // })
+        // console.log(obj)
 
         //**** Task-4:
         // var a = 10;
@@ -47,14 +51,6 @@
         //     return final;
         // })
         // console.log(removeMan);
-
-        // let nameList = ["ssidmansfsdf","manserdc","sdfsman"];
-        // let removMan = nameList.map((val)=>{
-        //     let rmMan = val.split('man');
-        //     let result = rmMan.join('');
-        //     return result;
-        // })
-        // console.log(removMan);
         
         //============= Reverse String
         // let name = 'Akash Sharma';
@@ -75,8 +71,34 @@
         // )
         // console.log(arr2)
 
+        //============= Find the 2nd last element of array
+        // let arr = ['a', 'c', 'r', 'o', 'b']
+        // let arr2 = arr[arr.length-2]
+        // console.log(arr2)
+
+        //============= Number and String 
+        // console.log(3+'3')
+        // console.log(3-'3')
+        
+        //============= Find the duplicate element in array (discuss with manish)
+        // arr = [2,6,8,8,0,3,4,2,1,3,6];
+        // let arr2 = arr.filter((item, index, arr)=>arr.indexOf(item) !== index)
+        //Find the dauble element in one time
+        //let arr2 = arr.filter((item, index, arr)=>arr.indexOf(item) === index)
+        //console.log(arr2)
+
+        //============= Merge two sorted arrays in ascending order and remove duplicates (discuss with manish)
+        // let arr1 = [1, 3, 4, 5, 5], arr2 = [2, 4, 4, 6, 8]
+        // let arr3 = arr1.concat(arr2)
+        // let arr4 = arr3.sort((a,b)=>a-b)
+        // let arr5 = arr4.filter((item, index, array)=>{
+        //     array.indexOf(item) === index
+        // })
+        // console.log(arr5)
+
         
 
+        
 
         
 

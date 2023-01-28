@@ -1,11 +1,14 @@
 import React, { Component, useState, useEffect } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+import CountingStart from './components/CountingStart';
 // import TopDiv from './components/getColor/TopDiv';
 // import Task1 from './components/Task1';
 // import Task2 from './components/Task2';
 // import Task3 from './components/Task3';
 // import DataShort from './components/DataShort';
 // import DataShort1 from './components/DataShort1';
+// import DataShort2 from './components/DataShort2';
 //import SelectBoxCheck from './components/SelectBoxCheck';
 // import SelectBoxValue from './components/SelectBoxValue';
 // import ComOne from './components/contextapi/ComOne';
@@ -14,7 +17,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 // import ComOne from './components/hooks/usecontest/ComOne';
 // import LifeCycleUseEffect from './components/LifeCycleUseEffect';
 //import InputTask from './components/InputTask';
-import SythenticEvent from './components/SythenticEvent';
+// import SythenticEvent from './components/SythenticEvent';
+// import TableOfThreeTask from './components/TableOfThreeTask';
 
 
 const App = () => {
@@ -26,6 +30,7 @@ const App = () => {
       {/* <Task3/> */}
       {/* <DataShort/> */}
       {/* <DataShort1/> */}
+      {/* <DataShort2/> */}
       {/* <SelectBoxCheck/> */}
       {/* <SelectBoxValue/> */}
       {/* <ComOne/> */}
@@ -35,7 +40,9 @@ const App = () => {
       {/* <TopDiv/> */}
       {/* <LifeCycleUseEffect/> */}
       {/* <InputTask/> */}
-      <SythenticEvent/>
+      {/* <SythenticEvent/> */}
+      {/* <TableOfThreeTask/> */}
+      <CountingStart/>
     </>
   )
 }

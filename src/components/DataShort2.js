@@ -8,7 +8,7 @@ const DataShort1 = () => {
   const [status, setStatus] = useState([]);
 
   useEffect(()=>{
-      axios.get('http://localhost:5000/student').then((res)=>{
+      axios.get('http://localhost:5000/todos').then((res)=>{
         setCount(res.data);
         let complate = res.data.filter(e => e.Status === 'Complated')
         setComplated(complate.length)
