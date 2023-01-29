@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-import CountingStart from './components/CountingStart';
+
 // import TopDiv from './components/getColor/TopDiv';
 // import Task1 from './components/Task1';
 // import Task2 from './components/Task2';
@@ -19,6 +19,8 @@ import CountingStart from './components/CountingStart';
 //import InputTask from './components/InputTask';
 // import SythenticEvent from './components/SythenticEvent';
 // import TableOfThreeTask from './components/TableOfThreeTask';
+// import CountingStart from './components/CountingStart';
+import LazyLoadingTask from './components/reactTopic/LazyLoadingTask';
 
 
 const App = () => {
@@ -42,7 +44,8 @@ const App = () => {
       {/* <InputTask/> */}
       {/* <SythenticEvent/> */}
       {/* <TableOfThreeTask/> */}
-      <CountingStart/>
+      {/* <CountingStart/> */}
+      <LazyLoadingTask/>
     </>
   )
 }
