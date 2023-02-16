@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import CallbackHook from './components/hooks/usecallback/CallbackHook';
 
 
 // import TopDiv from './components/getColor/TopDiv';
@@ -20,7 +21,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import SythenticEvent from './components/SythenticEvent';
 // import TableOfThreeTask from './components/TableOfThreeTask';
 // import CountingStart from './components/CountingStart';
-import LazyLoadingTask from './components/reactTopic/LazyLoadingTask';
+// import LazyLoadingTask from './components/reactTopic/LazyLoadingTask';
 
 
 const App = () => {
@@ -45,7 +46,8 @@ const App = () => {
       {/* <SythenticEvent/> */}
       {/* <TableOfThreeTask/> */}
       {/* <CountingStart/> */}
-      <LazyLoadingTask/>
+      {/* <LazyLoadingTask/> */}
+      <CallbackHook/>
     </>
   )
 }
