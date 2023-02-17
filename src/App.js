@@ -1,7 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import CallbackHook from './components/hooks/usecallback/CallbackHook';
-
+import Parent from './components/dataTransforChildToParent/Parent';
 
 // import TopDiv from './components/getColor/TopDiv';
 // import Task1 from './components/Task1';
@@ -13,15 +12,16 @@ import CallbackHook from './components/hooks/usecallback/CallbackHook';
 //import SelectBoxCheck from './components/SelectBoxCheck';
 // import SelectBoxValue from './components/SelectBoxValue';
 // import ComOne from './components/contextapi/ComOne';
+// import ComOne from './components/hooks/usecontest/ComOne';
 // import CheckboxDelete from './components/CheckboxDelete';
 // import CheckboxDeleteTwo from './components/CheckboxDeleteTwo';
-// import ComOne from './components/hooks/usecontest/ComOne';
 // import LifeCycleUseEffect from './components/LifeCycleUseEffect';
 //import InputTask from './components/InputTask';
 // import SythenticEvent from './components/SythenticEvent';
 // import TableOfThreeTask from './components/TableOfThreeTask';
 // import CountingStart from './components/CountingStart';
 // import LazyLoadingTask from './components/reactTopic/LazyLoadingTask';
+// import CallbackHook from './components/hooks/usecallback/CallbackHook';
 
 
 const App = () => {
@@ -37,9 +37,9 @@ const App = () => {
       {/* <SelectBoxCheck/> */}
       {/* <SelectBoxValue/> */}
       {/* <ComOne/> */}
+      {/* <ComOne/> */}
       {/* <CheckboxDelete/> */}
       {/* <CheckboxDeleteTwo/> */}
-      {/* <ComOne/> */}
       {/* <TopDiv/> */}
       {/* <LifeCycleUseEffect/> */}
       {/* <InputTask/> */}
@@ -47,7 +47,8 @@ const App = () => {
       {/* <TableOfThreeTask/> */}
       {/* <CountingStart/> */}
       {/* <LazyLoadingTask/> */}
-      <CallbackHook/>
+      {/* <CallbackHook/> */}
+      <Parent/>
     </>
   )
 }
