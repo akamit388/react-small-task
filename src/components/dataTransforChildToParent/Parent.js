@@ -8,7 +8,7 @@ const Parent = () => {
 
     return (
         <>
-            <Child getData={getData} />
+            <Child getData1={getData} />
         </>
     )
 }

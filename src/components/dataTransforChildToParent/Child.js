@@ -7,7 +7,7 @@ const Child = (props) => {
 
     let submitHandler = (e) => {
         e.preventDefault()
-        props.getData(name)
+        props.getData1(name)
         //setName('')
     }
 

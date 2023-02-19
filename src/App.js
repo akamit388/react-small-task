@@ -1,8 +1,9 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Parent from './components/dataTransforChildToParent/Parent';
+import Parent from './components/hooks/usecallback/Parent';
 
-// import TopDiv from './components/getColor/TopDiv';
+
+
 // import Task1 from './components/Task1';
 // import Task2 from './components/Task2';
 // import Task3 from './components/Task3';
@@ -22,6 +23,9 @@ import Parent from './components/dataTransforChildToParent/Parent';
 // import CountingStart from './components/CountingStart';
 // import LazyLoadingTask from './components/reactTopic/LazyLoadingTask';
 // import CallbackHook from './components/hooks/usecallback/CallbackHook';
+// import Parent from './components/dataTransforChildToParent/Parent';
+// import TopDiv from './components/getColor/TopDiv';
+// import Memo from './components/hooks/Memo';
 
 
 const App = () => {
@@ -48,6 +52,8 @@ const App = () => {
       {/* <CountingStart/> */}
       {/* <LazyLoadingTask/> */}
       {/* <CallbackHook/> */}
+      {/* <Parent/> */}
+      {/* <Memo/> */}
       <Parent/>
     </>
   )

@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {memo} from 'react'
 
-const ComTwo = () => {
+const Child = (Learning, count) => {
+  console.log('Child')
   return (
     <>
-      <h1>hello</h1>
+      
     </>
   )
 }
 
-export default ComTwo
+export default memo(Child)
