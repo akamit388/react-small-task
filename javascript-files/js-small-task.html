@@ -8,7 +8,7 @@
     <style>
         /* Div Center */
         /* .center1{width:200px; height: 100px; background-color: #eee; position: absolute; top:50%; left:50%; margin: -50px 0 0 -100px; font-size: 30px;}
-        .center2{width:200px; background-color: #eee; position: absolute; top:50%; left:50%; trahthnsform:translate(-50%, -50%)}*/
+        .center2{width:200px; background-color: #eee; position: absolute; top:50%; left:50%; transform:translate(-50%, -50%)}*/
         /* .center3{width:600px;height: 600px;display: flex;justify-content: center;align-items: center;}
         .center3 div{width: 200px; background-color: #f00;}  */
         /***** Div Center 4 Example *****/
@@ -34,9 +34,12 @@
 
     <script>
         //**** Task-1: Array Shuffling
-        // let arr = 'ramkishan';
+        //let arr = 'ramkishan';
         // let arr2 = arr.split('') 0.5 - Math.random();
-        // console.log(arr2);
+        // let shuffleArr = [3,1,9,29,4,6,7,2,9];
+        // let arr2 = arr.split('');
+        // let arr3 = shuffleArr.sort((a,b)=>0.5-Math.random());
+        // console.log(arr3);
 
         //**** Task-2: console printing
         // console.log('amit');
@@ -52,6 +55,7 @@
         // let arr2 = ['Rohan', 'Ashish', 'Manoj', 'Ram'];
         // arr.forEach((value, index)=>{
         //     obj[value] = arr2[index];
+        //     //console.log(obj[value]  +  arr2[index] ) 
         // })
         // console.log(obj)
 
@@ -295,11 +299,11 @@
         // console.log(arr2);
 
         //**** Reduce Method
-        const arr = [125, 50, 25];
-        const arr1 = arr.reduce( (total, num) => {
-            return total + num
-        }, 0)
-        console.log(arr1)
+        // const arr = [125, 50, 25];
+        // const arr1 = arr.reduce( (total, num) => {
+        //     return total + num
+        // }, 0)
+        // console.log(arr1)
 
         //Reduce Method reduce the array and return the sum of the array.
 
@@ -307,7 +311,7 @@
         //**** Promise
         // let data = new Promise((resolve, reject)=>{
         //     setTimeout(()=>{
-        //         reject('Code run')
+        //         resolve('Code run')
         //     })
         // })
         // data.finally((fine)=>{
@@ -372,7 +376,63 @@
         // console.log(name);
         // let result = name.split('').reverse().join('');
         // console.log(result);
+
+        //====================== Data Types
+        // let counter1 = "Hi";
+        // console.log(typeof(counter1)); // "string"
+        // let counter2 = 120;
+        // console.log(typeof(counter2)); // "number"
+        // let counter3 = false; 
+        // console.log(typeof(counter3)); // "boolean"
+        // let counter4 = null; 
+        // console.log(typeof(counter4)); // "object"
+        // let counter5 = undefined; 
+        // console.log(typeof(counter5)); // "undefined"
         
+        //====================== Javascript Generator Function
+        // function* generatorFun(){
+        //     yield 1; //Data read from yield
+        //     yield 2;
+        //     yield 3;
+        // }
+        // const gen = generatorFun();
+
+        // console.log(gen.next()) //{value: 1, done: false}
+        // console.log(gen.next()) //{value: 2, done: false}
+        // console.log(gen.next()) //{value: 3, done: false}
+        // console.log(gen.next()) //{value: undefined, done: true}
+
+        // for(let i of gen){
+        //     console.log(i)
+        // }
+
+        //====================== setTimeout in for loop
+        // for(let i = 0; i < 10; i++){
+        //     setTimeout(()=>{
+        //         console.log(i)
+        //     }, 1000)
+        // }
+        
+        //====================== Javascript Lexical scoping / Closure
+        // const outerFun = (a) => {
+        //     const b = 10;
+        //     const innerFun = () => {
+        //         console.log(`${a+b}`)
+        //     }
+        //     innerFun();
+        // }
+        // outerFun(5)
+        
+        //====================== Javascript Closure
+        const outerFun = (a) => {
+            const b = 10;
+            const innerFun = () => {
+                console.log(`${a+b}`)
+            }
+            return innerFun
+        }
+        const myFun = outerFun(5)
+        myFun();
 
         
 
