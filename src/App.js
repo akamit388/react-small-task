@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import HigherOrderComponents from './components/reactTopic/HigherOrderComponents';
+
 
 
 
@@ -28,6 +28,8 @@ import HigherOrderComponents from './components/reactTopic/HigherOrderComponents
 // import TopDiv from './components/getColor/TopDiv';
 // import Memo from './components/hooks/Memo';
 //import Parent from './components/hooks/usecallback/Parent';
+// import HigherOrderComponents from './components/reactTopic/HigherOrderComponents';
+import ApiDataSort from './components/ApiDataSort';
 
 const App = () => {
 
@@ -56,7 +58,8 @@ const App = () => {
       {/* <Parent/> */}
       {/* <Memo/> */}
       {/* <Parent/> */}
-      <HigherOrderComponents/>
+      {/* <HigherOrderComponents/> */}
+      <ApiDataSort/>
     </>
   )
 }
